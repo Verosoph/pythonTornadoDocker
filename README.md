@@ -12,7 +12,7 @@ This is a tornado example written in python.
 
 4. `python app.py`
 
-5. http://localhost:8889/
+5. `http://localhost:8889/`
 
 ### Docker
 ```
