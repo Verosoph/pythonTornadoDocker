@@ -6,6 +6,6 @@ RUN cd /tmp \
     && cd pythonTornadoDocker \
     && pip install -r requirements.txt
 
-EXPOSE 8888
+EXPOSE 8889
 
-CMD ["python", "app.py"]
+CMD ["python", "/tmp/pythonTornadoDocker/app.py"]
