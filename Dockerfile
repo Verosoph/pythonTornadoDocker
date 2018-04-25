@@ -1,8 +1,10 @@
 FROM ubuntu
 
-RUN apt-get update -y && apt-get install python python-pip -y
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN apt-get update -y && apt-get install git python python-pip -y
+RUN cd /tmp \
+    && git clone https://github.com/Verosoph/pythonTornadoDocker.git \
+    && cd pythonTornadoDocker \
+    && pip install -r requirements.txt
 
 EXPOSE 8888
 
