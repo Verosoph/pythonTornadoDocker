@@ -25,3 +25,14 @@ docker run -d -p 8889:8889 tornado_app
 docker-compose up
 ```
 
+
+
+
+
+
+to access into a docker container use:
+```
+docker exec -ti CONTAINERNAME env COLUMNS=$COLUMNS LINES=$LINES TERM=$TERM bash -l
+
+```
+

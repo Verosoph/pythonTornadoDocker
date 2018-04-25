@@ -5,6 +5,8 @@ RUN cd /tmp \
     && git clone https://github.com/Verosoph/pythonTornadoDocker.git \
     && cd pythonTornadoDocker \
     && pip install -r requirements.txt
+RUN apt-get install postgresql postgresql-contrib
+
 
 EXPOSE 8889
 
