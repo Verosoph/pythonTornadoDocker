@@ -36,3 +36,4 @@ docker exec -ti CONTAINERNAME env COLUMNS=$COLUMNS LINES=$LINES TERM=$TERM bash 
 
 ```
 
+
