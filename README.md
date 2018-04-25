@@ -14,10 +14,14 @@ This is a tornado example written in python.
 
 5. http://localhost:8889/
 
-## Docker
-
+### Docker
 ```
 docker build -t tornado_app .
 docker run -d -p 8889:8889 tornado_app
+```
+
+### or
+```
+docker-compose up
 ```
 
