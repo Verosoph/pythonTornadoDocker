@@ -2,7 +2,7 @@
 
 This is a tornado example written in python.
 
-### Installation
+## Installation (local)
 
 1. `git clone https://github.com/Verosoph/pythonTornadoDocker.git`
 
@@ -14,23 +14,23 @@ This is a tornado example written in python.
 
 5. `http://localhost:8889/`
 
-### Docker
-```
-docker build -t tornado_app .
-docker run -d -p 8889:8889 tornado_app
-```
+## Run as Docker Composition
 
-### or
+### Create and run Docker container
 ```
 docker-compose up
 ```
 
+####  pgAdmin4
+    http://localhost:5050
+
+to connect to the postgres Docker
+use `db` as hostname <br>
+( refering to the name of the postgres docker inside docker-compose.yml)
 
 
 
-
-
-to access into a docker container use:
+#### Access into a docker container use:
 ```
 docker exec -ti CONTAINERNAME env COLUMNS=$COLUMNS LINES=$LINES TERM=$TERM bash -l
 
