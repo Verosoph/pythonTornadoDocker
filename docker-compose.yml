@@ -5,5 +5,10 @@ services:
   app:
     restart: always
     build: ./
+    volumes: 
+      - .:/tmp/pythonTornadoDocker
     ports:
       - 8889:8889
+    
+    link:
+     - db

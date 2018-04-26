@@ -7,7 +7,6 @@ RUN cd /tmp \
     && pip install -r requirements.txt
 RUN apt-get install postgresql postgresql-contrib
 
-
 EXPOSE 8889
 
 CMD ["python", "/tmp/pythonTornadoDocker/app.py"]
