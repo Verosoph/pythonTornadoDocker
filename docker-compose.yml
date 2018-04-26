@@ -20,3 +20,14 @@ services:
     
     depends_on:
      - db
+
+  pgAdmin:
+    image: fenglc/pgadmin4
+    ports:
+      - 5050:5050
+    environment:
+      - DEFAULT_USER=test
+      - DEFAULT_PASSWORD=test
+      - DEFAULT_SERVER=localhost
+    links:
+      - db
