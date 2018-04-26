@@ -10,5 +10,5 @@ services:
     ports:
       - 8889:8889
     
-    links:
+    depends_on:
      - db
